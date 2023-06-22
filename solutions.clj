@@ -11,3 +11,8 @@ true
 ;; Problem 3
 
 "HELLO WORLD"
+
+;; Problem 4
+
+:a :b :c
+
