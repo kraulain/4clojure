@@ -24,3 +24,6 @@ true
 
 :a :b :c
 
+;; Problem 7
+
+[1 2 3 4]
