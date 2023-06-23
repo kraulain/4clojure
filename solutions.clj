@@ -20,3 +20,7 @@ true
 
 '(1 2 3 4)
 
+;; Problem 6
+
+:a :b :c
+
