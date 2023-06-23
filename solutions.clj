@@ -27,3 +27,8 @@ true
 ;; Problem 7
 
 [1 2 3 4]
+
+;; Problem 8
+
+#{:a :b :c :d}
+
