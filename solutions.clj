@@ -16,3 +16,7 @@ true
 
 :a :b :c
 
+;; Problem 5
+
+'(1 2 3 4)
+
