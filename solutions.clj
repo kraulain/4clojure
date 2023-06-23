@@ -32,3 +32,7 @@ true
 
 #{:a :b :c :d}
 
+;; problem 9
+
+2
+
