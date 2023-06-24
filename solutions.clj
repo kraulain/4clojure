@@ -32,7 +32,10 @@ true
 
 #{:a :b :c :d}
 
-;; problem 9
+;; Problem 9
 
 2
 
+;; Problem 10
+
+20
