@@ -44,4 +44,7 @@ true
 
 {:b 2}
 
+;; Problem 12
+
+3
 
