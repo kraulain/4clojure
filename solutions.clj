@@ -55,3 +55,8 @@ true
 ;; Problem 14
 
 8
+
+;; Problem 15
+
+#(* % 2)
+
