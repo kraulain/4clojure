@@ -60,3 +60,6 @@ true
 
 #(* % 2)
 
+;; Problem 16
+
+(fn [name] (str "Hello, " name "!"))
