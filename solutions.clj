@@ -67,3 +67,7 @@ true
 ;; Problem 17
 
 '(6 7 8)
+
+;; Problem 18
+
+'(6 7)
