@@ -63,3 +63,7 @@ true
 ;; Problem 16
 
 (fn [name] (str "Hello, " name "!"))
+
+;; Problem 17
+
+'(6 7 8)
