@@ -76,3 +76,10 @@ true
 
 #(first (reverse %))
 
+;; Problem 20
+
+(fn [col]
+  (if (< (count col) 2)
+    nil
+    (get (vec col) (- (count col) 2))))
+
