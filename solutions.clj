@@ -83,3 +83,7 @@ true
     nil
     (get (vec col) (- (count col) 2))))
 
+;; Problem 21
+
+(fn [col index]
+  (get (vec col) index))
