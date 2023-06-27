@@ -71,3 +71,8 @@ true
 ;; Problem 18
 
 '(6 7)
+
+;; Problem 19
+
+#(first (reverse %))
+
