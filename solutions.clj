@@ -87,3 +87,8 @@ true
 
 (fn [col index]
   (get (vec col) index))
+
+;; Problem 22
+
+#(reduce inc 0 %)
+
