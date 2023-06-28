@@ -104,3 +104,8 @@ true
 
 #(reduce + 0 %)
 
+;; Problem 25
+
+#(filter odd? %)
+
+
