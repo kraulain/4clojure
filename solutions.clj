@@ -100,3 +100,7 @@ true
                acc
                (recur (rest coll) (cons (first coll) acc)))))
 
+;; Problem 24
+
+#(reduce + 0 %)
+
