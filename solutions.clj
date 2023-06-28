@@ -108,4 +108,14 @@ true
 
 #(filter odd? %)
 
+;; Problem 26
+
+(fn [num]
+  (loop [x 0 coll '()]
+    (if (= x num)
+      (reverse coll)
+      (cond
+        (= x 0) (recur (inc x) (conj coll 1))
+        (= x 1) (recur (inc x) (conj coll 1))
+        :else (recur (inc x) (conj coll (+(first coll) (second coll))))))))
 
