@@ -92,3 +92,11 @@ true
 
 #(reduce inc 0 %)
 
+;; Problem 23
+
+(fn [coll] (loop [coll coll
+                  acc '()]
+             (if (empty? coll)
+               acc
+               (recur (rest coll) (cons (first coll) acc)))))
+
