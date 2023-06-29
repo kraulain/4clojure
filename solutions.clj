@@ -124,3 +124,10 @@ true
 (fn [coll]
   (= (reverse (seq coll)) (seq coll)))
 
+;; Problem 28
+
+(defn my-flat [coll]
+  (if (sequential? coll)
+    (mapcat my-flat coll)
+    (list coll)))
+
