@@ -131,3 +131,13 @@ true
     (mapcat my-flat coll)
     (list coll)))
 
+;; Problem 29
+
+(defn is-upper-case? [char]
+  (= (str char) (clojure.string/upper-case (str char))))
+
+(defn remove-non-letters [phrase]
+  (re-seq #"[a-zA-Z]" phrase ))
+
+#(apply str (filter is-upper-case? (remove-non-letters %)))
+
