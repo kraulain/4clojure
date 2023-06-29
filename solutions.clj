@@ -119,3 +119,8 @@ true
         (= x 1) (recur (inc x) (conj coll 1))
         :else (recur (inc x) (conj coll (+(first coll) (second coll))))))))
 
+;; Problem 27
+
+(fn [coll]
+  (= (reverse (seq coll)) (seq coll)))
+
