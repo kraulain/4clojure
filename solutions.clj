@@ -148,6 +148,6 @@ true
          acc []]
     (if-not (first x)
       (apply list acc)
-      (if-not (contains? (apply hash-set acc) (first x))
+      (if-not (= (first x) (last acc))
         (recur (rest x) (conj acc (first x)))
         (recur (rest x) acc)))))
