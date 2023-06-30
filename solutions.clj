@@ -141,3 +141,7 @@ true
 
 #(apply str (filter is-upper-case? (remove-non-letters %)))
 
+;; Problem 30
+
+(#(apply list (into #{} (seq %))) "leeerroooy")
+
