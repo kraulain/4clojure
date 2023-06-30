@@ -143,5 +143,11 @@ true
 
 ;; Problem 30
 
-(#(apply list (into #{} (seq %))) "leeerroooy")
-
+(defn remove-dups [in]
+  (loop [x (seq in)
+         acc []]
+    (if-not (first x)
+      (apply list acc)
+      (recur (rest x) (if-not (contains? acc (first x))
+                        acc
+                        (conj acc (first x)))))))
