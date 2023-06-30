@@ -144,10 +144,11 @@ true
 ;; Problem 30
 
 (defn remove-dups [in]
-  (loop [x (seq in)
-         acc []]
-    (if-not (first x)
-      (apply list acc)
-      (recur (rest x) (if-not (contains? acc (first x))
-                        acc
-                        (conj acc (first x)))))))
+  (let [b (into #{} (seq in))]
+    (loop [x (seq in)
+           acc []]
+      (if-not (first x)
+        (apply list acc)
+        (if-not (contains? b (first x))
+          (recur (rest x) (conj acc (first x)))
+          (recur (rest x) acc))))))
