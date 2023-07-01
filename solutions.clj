@@ -158,7 +158,6 @@ true
   (loop [x input
          acc '()]
     (cond
-      (empty? x)                       acc
-      (empty? acc)                     (recur (rest x) (conj acc (list (first x))))
+      (empty? x)                       (reverse acc)
       (= (last (last acc)) (first x))  (recur (rest x) (conj (last acc) (first x)))
       :else                            (recur (rest x) (conj acc (list (first x)))))))
