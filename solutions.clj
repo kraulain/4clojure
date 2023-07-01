@@ -154,12 +154,11 @@ true
 
 ;; Problem 31
 
-(defn func [in] 
-  (loop [x in
-         sub-acc '()
+(defn func [input]
+  (loop [x input
          acc '()]
-    (cond 
-      (empty? x)                    acc
-      (empty? acc)                  (recur (rest x) (conj sub-acc (first x)) (conj acc sub-acc))
-      (= (last sub-acc) (first x))  (recur (rest x) (conj sub-acc (first x)) (conj (butlast acc) sub-acc))
-      :else                         (recur (rest x) (do (conj sub-acc '()) (conj sub-acc (first in)) sub-acc) (conj acc sub-acc)))))
+    (cond
+      (empty? x)                       acc
+      (empty? acc)                     (recur (rest x) (conj acc (list (first x))))
+      (= (last (last acc)) (first x))  (recur (rest x) (conj (last acc) (first x)))
+      :else                            (recur (rest x) (conj acc (list (first x)))))))
