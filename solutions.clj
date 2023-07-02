@@ -163,4 +163,5 @@ true
 ;; Problem 33
 
 (fn [col n]
-  (map #(repeat n %) col))
+  (mapcat identity (map #(repeat n %) col)))
+
