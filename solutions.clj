@@ -158,4 +158,5 @@ true
 
 ;; Problem 32
 
-#(flatten (map (fn [i] [i i]) %))
+#(mapcat identity (map (fn [i] [i i]) %))
+
