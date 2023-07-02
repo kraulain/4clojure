@@ -160,3 +160,7 @@ true
 
 #(mapcat identity (map (fn [i] [i i]) %))
 
+;; Problem 33
+
+(fn [col n]
+  (map #(repeat n %) col))
