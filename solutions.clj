@@ -158,4 +158,4 @@ true
 
 ;; Problem 32
 
-#(map (fn [i] [i i]) %)
+#(flatten (map (fn [i] [i i]) %))
