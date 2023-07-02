@@ -155,3 +155,7 @@ true
 ;; Problem 31
 
 #(partition-by identity %)
+
+;; Problem 32
+
+#(map (fn [i] [i i]) %)
