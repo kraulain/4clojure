@@ -170,5 +170,5 @@ true
 (defn my-func [x y]
   (loop [acc (vector x)]
     (if (= (last acc) (- y 1))
-      acc
+      (apply list acc)
       (recur (conj acc (inc (last acc)))))))
