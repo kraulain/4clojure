@@ -172,3 +172,9 @@ true
     (if (= (last acc) (- y 1))
       (apply list acc)
       (recur (conj acc (inc (last acc)))))))
+
+
+;; Problem 35
+
+7
+
