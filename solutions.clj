@@ -167,9 +167,8 @@ true
 
 ;; Problem 34
 
-(defn my-range [min max]
-  (loop [acc []]
-    (cond
-      (empty? acc)              (recur (conj acc min))
-      (= (last acc) (- max 1))  acc
-      :else                     (recur (conj (inc (last acc)))))))
+(defn my-func [x y]
+  (loop [acc (vector x)]
+    (if (= (last acc) (- y 1))
+      acc
+      (recur (conj acc (inc (last acc)))))))
