@@ -165,3 +165,11 @@ true
 (fn [col n]
   (mapcat identity (map #(repeat n %) col)))
 
+;; Problem 34
+
+(defn my-range [min max]
+  (loop [acc []]
+    (cond
+      (empty? acc)              (recur (conj acc min))
+      (= (last acc) (- max 1))  acc
+      :else                     (recur (conj (inc (last acc)))))))
