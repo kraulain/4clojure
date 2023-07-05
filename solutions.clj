@@ -186,3 +186,12 @@ true
 
 "ABC"
 
+;; Problem 38
+
+(defn f [& args]
+  (loop [in args
+         m (first in)]
+    (if (empty? in)
+      m
+      (recur (rest in) (when (> (first in) m) m)))))
+
