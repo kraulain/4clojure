@@ -178,3 +178,7 @@ true
 
 7
 
+;; Problem 36
+
+[x 7 y 3 z 1]
+
