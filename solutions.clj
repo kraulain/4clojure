@@ -193,5 +193,7 @@ true
          m (first in)]
     (if (empty? in)
       m
-      (recur (rest in) (when (> (first in) m) m)))))
+      (recur (rest in) (if (> (first in) m)
+                         (first in)
+                         m)))))
 
