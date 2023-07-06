@@ -203,6 +203,6 @@ true
   (loop [col1 a
          col2 b
          acc []]
-    (if-not (seq col1)
+    (if (or (empty? col1) (empty? col2))
        acc
        (recur (rest col1) (rest col2) (conj acc (first col1) (first col2))))))
