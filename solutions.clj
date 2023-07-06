@@ -197,3 +197,12 @@ true
                          (first in)
                          m)))))
 
+;; Problem 39
+
+(defn f39 [a b]
+  (loop [col1 a
+         col2 b
+         acc []]
+    (if-not (seq col1)
+       acc
+       (recur (rest col1) (rest col2) (conj acc (first col1) (first col2))))))
