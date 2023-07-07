@@ -214,4 +214,4 @@ true
          acc []]
     (if-not (next col)
       (conj acc (last col))
-      (recur (rest col) (conj acc (first col) x)))))
+      (recur (rest col) (conj acc (first col) in)))))
