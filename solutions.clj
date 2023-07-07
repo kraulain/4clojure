@@ -212,6 +212,6 @@ true
 (defn [in col]
   (loop [x col
          acc []]
-    (if-not (next col)
-      (conj acc (last col))
+    (if (empty? col)
+      (butlast col)
       (recur (rest col) (conj acc (first col) in)))))
