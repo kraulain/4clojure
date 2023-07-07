@@ -209,9 +209,10 @@ true
 
 ;; Problem 40
 
-(defn [in col]
+(defn f40 [in col]
   (loop [x col
          acc []]
-    (if (empty? col)
-      (butlast col)
-      (recur (rest col) (conj acc (first col) in)))))
+    (if (empty? x)
+      (butlast acc)
+      (recur (rest x) (conj acc (first x) in)))))
+
