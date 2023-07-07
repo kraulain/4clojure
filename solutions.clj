@@ -206,3 +206,12 @@ true
     (if (or (empty? col1) (empty? col2))
        acc
        (recur (rest col1) (rest col2) (conj acc (first col1) (first col2))))))
+
+;; Problem 40
+
+(defn [in col]
+  (loop [x col
+         acc []]
+    (if-not (next col)
+      (conj acc (last col))
+      (recur (rest col) (conj acc (first col) x)))))
