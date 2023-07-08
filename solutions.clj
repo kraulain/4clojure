@@ -222,6 +222,5 @@ true
   (let [acc []]
     (doseq [x col]
       (when (not (= (mod (+ 1 (.indexOf col x)) y) 0))
-        (println x)
-        (conj acc x)))
+        (set! acc (conj acc x))))
     acc))
