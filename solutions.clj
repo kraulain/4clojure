@@ -218,9 +218,10 @@ true
 
 ;; Problem 41
 
-(defn f41 [col y]
-  (let [acc []]
-    (doseq [x col]
-      (when (not (= (mod (+ 1 (.indexOf col x)) y) 0))
-        (set! acc (conj acc x))))
-    acc))
+(defn f41 [x y]
+  (loop [col x
+         acc []]
+    (cond
+      (empty? col) acc
+      (= (mod (+ 1 (.indexOf col x)) y) 0) (recur (rest col) acc)
+      :else (recur (rest col) (conj acc (first col))))))
