@@ -223,5 +223,5 @@ true
          acc []]
     (cond
       (empty? col) acc
-      (= (mod (+ 1 (.indexOf col x)) y) 0) (recur (rest col) acc)
+      (= (mod (+ 1 (.indexOf x (first col))) y) 0) (recur (rest col) acc)
       :else (recur (rest col) (conj acc (first col))))))
