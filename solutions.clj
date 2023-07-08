@@ -216,3 +216,12 @@ true
       (butlast acc)
       (recur (rest x) (conj acc (first x) in)))))
 
+;; Problem 41
+
+(defn f41 [col y]
+  (let [acc []]
+    (doseq [x col]
+      (when (not (= (mod (+ 1 (.indexOf col x)) y) 0))
+        (println x)
+        (conj acc x)))
+    acc))
