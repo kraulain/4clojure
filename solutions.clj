@@ -225,3 +225,13 @@ true
       (empty? col) acc
       (= (mod (+ 1 (.indexOf x (first col))) y) 0) (recur (rest col) acc)
       :else (recur (rest col) (conj acc (first col))))))
+
+;; Problem 42
+
+
+(defn 42 [num]
+  (loop [x num
+         acc 1]
+    (if (= 0 x)
+      acc
+      (recur (dec x) (* acc x)))))
