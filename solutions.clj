@@ -229,7 +229,7 @@ true
 ;; Problem 42
 
 
-(defn 42 [num]
+(defn f42 [num]
   (loop [x num
          acc 1]
     (if (= 0 x)
