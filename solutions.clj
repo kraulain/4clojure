@@ -167,7 +167,7 @@ true
 
 ;; Problem 34
 
-(defn my-func [x y]
+(fn [x y]
   (loop [acc (vector x)]
     (if (= (last acc) (- y 1))
       (apply list acc)
