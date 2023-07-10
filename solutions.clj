@@ -143,7 +143,7 @@ true
 
 ;; Problem 30
 
-(defn remove-dups [in]
+(fn [in]
   (loop [x (seq in)
          acc []]
     (if-not (first x)
