@@ -126,7 +126,7 @@ true
 
 ;; Problem 28
 
-(defn my-flat [coll]
+(fn [coll]
   (if (sequential? coll)
     (mapcat my-flat coll)
     (list coll)))
