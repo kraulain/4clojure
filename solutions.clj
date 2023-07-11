@@ -188,7 +188,7 @@ true
 
 ;; Problem 38
 
-(defn f [& args]
+(fn [& args]
   (loop [in args
          m (first in)]
     (if (empty? in)
