@@ -209,7 +209,7 @@ true
 
 ;; Problem 40
 
-(defn f40 [in col]
+(fn [in col]
   (loop [x col
          acc []]
     (if (empty? x)
