@@ -199,7 +199,7 @@ true
 
 ;; Problem 39
 
-(defn f39 [a b]
+(fn [a b]
   (loop [col1 a
          col2 b
          acc []]
