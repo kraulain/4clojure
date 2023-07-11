@@ -218,7 +218,7 @@ true
 
 ;; Problem 41
 
-(defn f41 [x y]
+(fn [x y]
   (loop [col x
          acc []]
     (cond
