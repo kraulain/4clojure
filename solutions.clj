@@ -244,6 +244,6 @@ true
          in (seq col)]
     (cond
       (> n x)       acc
-      (empty? acc)  (recur (inc n) (conj acc (vec (take-nth x in))) (rest in))
-      :else         (recur (inc n) (conj acc (vec (take-nth x (rest in))))  (rest in)))))
+      (empty? acc)  (recur (inc n) (conj acc (vec (take-nth x in))) in)
+      :else         (recur (inc n) (conj acc (vec (take-nth x (rest in)))) (rest in)))))
 
