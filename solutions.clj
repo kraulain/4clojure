@@ -235,3 +235,14 @@ true
     (if (= 0 x)
       acc
       (recur (dec x) (* acc x)))))
+
+;; Problem 43
+
+(defn f43 [col x]
+  (loop [n 1
+         acc []]
+    (cond
+      (> n x)       acc
+      (empty? acc)  (recur (inc n) (conj acc (vec (take-nth x col))))
+      :else         (recur (inc n) (conj acc (vec (take-nth x (rest col))))))))
+
