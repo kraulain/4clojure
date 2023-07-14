@@ -240,10 +240,10 @@ true
 
 (defn f43 [col x]
   (loop [n 1
-         in col
-         acc []]
+         acc []
+         in (seq col)]
     (cond
       (> n x)       acc
-      (empty? acc)  (recur (inc n) (rest in) (conj acc (vec (take-nth x in))))
-      :else         (recur (inc n) (rest in) (conj acc (vec (take-nth x (rest in))))))))
+      (empty? acc)  (recur (inc n) (conj acc (vec (take-nth x in))) (rest in))
+      :else         (recur (inc n) (conj acc (vec (take-nth x (rest in))))  (rest in)))))
 
