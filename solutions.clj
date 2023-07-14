@@ -238,7 +238,7 @@ true
 
 ;; Problem 43
 
-(defn f43 [col x]
+(fn [col x]
   (loop [n 1
          acc []
          in (seq col)]
