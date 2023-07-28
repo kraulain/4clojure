@@ -249,7 +249,7 @@ true
 
 ;; Problem 44
 
-(defn f44 [num col]
+(fn [num col]
   (loop [n num
          l col]
     (cond
