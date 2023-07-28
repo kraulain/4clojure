@@ -247,3 +247,12 @@ true
       (empty? acc)  (recur (inc n) (conj acc (vec (take-nth x in))) in)
       :else         (recur (inc n) (conj acc (vec (take-nth x (rest in)))) (rest in)))))
 
+;; Problem 44
+
+(defn f44 [num col]
+  (loop [n num
+         l col]
+    (cond
+      (= n 0) l
+      (> n 0) (recur (dec n) (conj (vec (pop (apply list l))) (first l)))
+      :else   (recur (inc n) (conj (pop l) (last l))))))
