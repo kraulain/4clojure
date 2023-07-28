@@ -255,4 +255,4 @@ true
     (cond
       (= n 0) l
       (> n 0) (recur (dec n) (conj (vec (pop (apply list l))) (first l)))
-      :else   (recur (inc n) (conj (pop l) (last l))))))
+      :else   (recur (inc n) (cons (last l) (apply list (pop (vec l))))))))
