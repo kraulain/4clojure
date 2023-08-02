@@ -256,3 +256,7 @@ true
       (= n 0) l
       (> n 0) (recur (dec n) (conj (vec (pop (apply list l))) (first l)))
       :else   (recur (inc n) (cons (last l) (apply list (pop (vec l))))))))
+
+;; Problem 45
+
+'(1 4 7 10 13)
