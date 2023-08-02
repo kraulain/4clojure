@@ -260,3 +260,9 @@ true
 ;; Problem 45
 
 '(1 4 7 10 13)
+
+;; Problem 46
+
+(fn [f]
+  (fn [arg1 arg2]
+    (f arg2 arg1)))(fn [f] (fn [arg1 arg2] (f arg2 arg1)))
