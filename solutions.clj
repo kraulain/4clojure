@@ -266,3 +266,7 @@ true
 (fn [f]
   (fn [arg1 arg2]
     (f arg2 arg1)))(fn [f] (fn [arg1 arg2] (f arg2 arg1)))
+
+;; Problem 47
+
+4
