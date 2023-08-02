@@ -270,3 +270,8 @@ true
 ;; Problem 47
 
 4
+
+;; problem 48
+
+6
+
