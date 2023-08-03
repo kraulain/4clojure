@@ -277,4 +277,7 @@ true
 
 ;; problem 49
 
-(fn [n coll] (partition-by (take n) coll))
+(fn [n coll]
+  (let [h (take n coll)
+        t (drop n coll)]
+    [h t]))
