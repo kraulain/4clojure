@@ -277,4 +277,4 @@ true
 
 ;; problem 49
 
-partition
+(fn [n coll] (partition-by (take n) coll))
