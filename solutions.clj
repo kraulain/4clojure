@@ -275,3 +275,6 @@ true
 
 6
 
+;; problem 49
+
+partition
