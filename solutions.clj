@@ -281,3 +281,7 @@ true
   (let [h (take n coll)
         t (drop n coll)]
     [h t]))
+
+;; problem 50
+
+
