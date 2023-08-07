@@ -282,5 +282,3 @@ true
         t (drop n coll)]
     [h t]))
 
-;; problem 50
-
