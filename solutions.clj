@@ -286,8 +286,3 @@ true
 
 ;; problem 51
 
-;; Problem 52
-
-
-
-
