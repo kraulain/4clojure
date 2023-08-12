@@ -284,4 +284,7 @@ true
 
 ;; problem 50
 
-
+(defn f50 [coll]
+  (let [a (filter keyword? coll)
+        b (filter (not keyword?) coll)]
+    (hash-set a b)))
