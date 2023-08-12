@@ -286,5 +286,5 @@ true
 
 (defn f50 [coll]
   (let [a (filter keyword? coll)
-        b (filter (not keyword?) coll)]
+        b (filter (complement keyword?) coll)]
     (hash-set a b)))
