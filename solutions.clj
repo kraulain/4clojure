@@ -271,18 +271,21 @@ true
 
 4
 
-;; problem 48
+;; Problem 48
 
 6
 
-;; problem 49
+;; Problem 49
 
 (fn [n coll]
   (let [h (take n coll)
         t (drop n coll)]
     [h t]))
 
-;; problem 50
+;; Problem 50
 
 (defn f50 [coll] (vals(group-by type coll)))
 
+;; Problem 51
+
+[1 2 3 4 5 ]
