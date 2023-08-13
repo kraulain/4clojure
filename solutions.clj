@@ -289,3 +289,8 @@ true
 ;; Problem 51
 
 [1 2 3 4 5 ]
+
+;; Problem 52
+
+[c e]
+
